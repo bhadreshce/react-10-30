@@ -1,17 +1,12 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import Test from './Test'
-const Demo = () => {
-  const changesearch = (data) => {
-    console.log(data);
+const Demo = (props, refrewnce) => {
 
-    document.getElementById('p').innerText = data
-  }
   return (
     <div>
-      <Test searchdata={changesearch} />
-      <p id='p'></p>
+      <input type="text" ref={refrewnce} />
     </div>
   )
 }
 
-export default Demo
+export default forwardRef(Demo)

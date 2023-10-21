@@ -1,11 +1,23 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Test from './Test'
 import Demo from './Demo'
-export default function App() {
+import List from './List'
 
+
+export default function App() {
+  const input = useRef('')
+  const inputfocus = () => {
+    input.current.value = 1000
+    input.current.style.backgroundColor = 'green'
+  }
   return (
     <div>
-      <Demo />
+      {/* <Demo ref={input} />
+      <button onClick={() => {
+        inputfocus()
+      }}>Add data</button> */}
+
+      <List />
 
     </div>
   )

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import Test from './Test'
 import Demo from './Demo'
 import List from './List'
+import Api from './Api'
 
 
 export default function App() {
@@ -17,7 +18,7 @@ export default function App() {
         inputfocus()
       }}>Add data</button> */}
 
-      <List />
+      <Api />
 
     </div>
   )

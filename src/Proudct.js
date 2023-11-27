@@ -7,7 +7,6 @@ const Proudct = () => {
     useEffect(() => {
         axios.get(`http://localhost:8001/users/${prdId}`).then((prd) => {
             console.log(prd.data);
-
         })
     }, [])
 

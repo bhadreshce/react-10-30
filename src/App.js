@@ -5,7 +5,7 @@ import List from './List'
 import Api from './Api'
 import Todo from './Todo'
 import Json from './Json'
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from 'react-router-dom'
 import Proudct from './Proudct'
 
 export default function App() {
@@ -24,8 +24,8 @@ export default function App() {
       {/* <Todo /> */}
 
       <Routes>
-        <Route path='' element={<Json />}></Route>
-        <Route path='/product/:prdId' element={<Proudct />}></Route>
+        <Route path="" element={<Json />}></Route>
+        <Route path="/product/:prdId" element={<Proudct />}></Route>
       </Routes>
     </div>
   )

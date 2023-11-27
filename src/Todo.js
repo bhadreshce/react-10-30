@@ -9,7 +9,7 @@ const Todo = () => {
     const addTask = async (data) => {
 
         if (index == null) {
-            if (input.current.value == "") {
+            if (  "") {
                 alert("please enere data")
             } else {
                 await setTodo(prevArray => [...prevArray, input.current.value])

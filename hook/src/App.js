@@ -3,6 +3,7 @@ import React, { createContext, useState } from 'react'
 import ChilA from './ChilA'
 import Memo from './Memo'
 import Inc from './Inc'
+import Validate from './Validate'
 const firsName = createContext('')
 const lasName = createContext('')
 
@@ -14,8 +15,8 @@ function App() {
         <ChilA />
       </lasName.Provider>
     </firsName.Provider> */}
-    <Inc />
-
+    {/* <Inc /> */}
+    <Validate />
   </div>
 }
 
